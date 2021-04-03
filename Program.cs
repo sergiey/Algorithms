@@ -23,6 +23,7 @@ namespace Algorithms
 
             Console.WriteLine();
 
+            // Choise Sort
             ChoiseSort choise = new ChoiseSort();
             choise.GetChoiseSort(array);
 
@@ -31,8 +32,22 @@ namespace Algorithms
             {
                 Console.Write(array[i] + " ");
             }
+            System.Console.WriteLine();
 
+            System.Console.WriteLine("Type number for search");
+            int number = Int32.Parse(Console.ReadLine()); 
 
+            // Binary Search
+            BinarySearch binarySearch = new BinarySearch();
+            int index = binarySearch.GetBinarySearch(array, number);
+            if(index == -1)
+            {
+                System.Console.WriteLine($"Number {number} not contained in the array");
+            }
+            else
+            {
+                System.Console.WriteLine($"Index of number {number} in the array is {index}");
+            }
         }
     }
 }
