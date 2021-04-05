@@ -6,13 +6,13 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            int arraySize = 20;
+            int arraySize = 10;
             int[] array = new int[arraySize];
             Random rnd = new Random();
 
             for(int i = 0; i < arraySize; i++)
             {
-                array[i] = rnd.Next(0, 11);
+                array[i] = rnd.Next(0, 16);
             }
 
             System.Console.WriteLine("Unsorted array");
@@ -23,12 +23,12 @@ namespace Algorithms
 
             Console.WriteLine();
 
-            // -------------
-            // Counting Sort
-            // -------------
+            // --------
+            // Bogosort
+            // --------
 
-            CountingSort counting = new CountingSort();
-            counting.GetCountingSort(array); 
+            Bogosort bogosort = new Bogosort();
+            bogosort.GetBogosort(array);
 
             System.Console.WriteLine("Sorted array");
             for(int i = 0; i < arraySize; i++)
@@ -36,6 +36,21 @@ namespace Algorithms
                 Console.Write(array[i] + " ");
             }
             System.Console.WriteLine();
+
+
+            // -------------
+            // Counting Sort
+            // -------------
+
+            // CountingSort counting = new CountingSort();
+            // counting.GetCountingSort(array); 
+
+            // System.Console.WriteLine("Sorted array");
+            // for(int i = 0; i < arraySize; i++)
+            // {
+            //     Console.Write(array[i] + " ");
+            // }
+            // System.Console.WriteLine();
 
 
             // --------------
