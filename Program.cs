@@ -6,36 +6,34 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            int arraySize = 10;
+            int arraySize = 30;
             int[] array = new int[arraySize];
             Random rnd = new Random();
 
             for(int i = 0; i < arraySize; i++)
-            {
-                array[i] = rnd.Next(0, 16);
-            }
+                array[i] = rnd.Next(0, 32);
 
-            System.Console.WriteLine("Unsorted array");
+            Console.WriteLine("Unsorted array");
             for(int i = 0; i < array.Length; i++)
-            {
                 Console.Write(array[i] + " ");
-            }
 
             Console.WriteLine();
+
+
+            // ----------
+            // Radix Sort
+            // ----------
+
+            RadixSort radixSort = new RadixSort();
+            radixSort.GetRadixSort(array);
+
 
             // --------
             // Bogosort
             // --------
 
-            Bogosort bogosort = new Bogosort();
-            bogosort.GetBogosort(array);
-
-            System.Console.WriteLine("Sorted array");
-            for(int i = 0; i < arraySize; i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-            System.Console.WriteLine();
+            // Bogosort bogosort = new Bogosort();
+            // bogosort.GetBogosort(array);
 
 
             // -------------
@@ -45,13 +43,6 @@ namespace Algorithms
             // CountingSort counting = new CountingSort();
             // counting.GetCountingSort(array); 
 
-            // System.Console.WriteLine("Sorted array");
-            // for(int i = 0; i < arraySize; i++)
-            // {
-            //     Console.Write(array[i] + " ");
-            // }
-            // System.Console.WriteLine();
-
 
             // --------------
             // Insertion Sort
@@ -60,12 +51,6 @@ namespace Algorithms
             // InsertionSort insertion = new InsertionSort();
             // insertion.GetInsertionSearch(array);
 
-            // System.Console.WriteLine("Sorted array");
-            // for(int i = 0; i < array.Length; i++)
-            // {
-            //     Console.Write(array[i] + " ");
-            // }
-            // System.Console.WriteLine();
 
             // ----------- 
             // Choise Sort
@@ -74,12 +59,11 @@ namespace Algorithms
             // ChoiseSort choise = new ChoiseSort();
             // choise.GetChoiseSort(array);
 
-            // System.Console.WriteLine("Sorted array");
-            // for(int i = 0; i < arraySize; i++)
-            // {
-            //     Console.Write(array[i] + " ");
-            // }
-            // System.Console.WriteLine();
+            Console.WriteLine("Sorted array");
+            for(int i = 0; i < arraySize; i++)
+                Console.Write(array[i] + " ");
+
+            Console.WriteLine();
 
 
             // -------------
