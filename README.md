@@ -7,4 +7,6 @@ Alredy studied:
 - insertion sort;
 - counting sort;
 - bogosort;
-- radix sort.
+- radix sort;
+- factorial;
+- fast pow.

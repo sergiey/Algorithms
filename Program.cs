@@ -6,32 +6,54 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            int arraySize = 30;
-            int[] array = new int[arraySize];
-            Random rnd = new Random();
+            // =================
+            // R E C U R S I O N
+            // =================
 
-            for(int i = 0; i < arraySize; i++)
-                array[i] = rnd.Next(0, 32);
+            // -------------
+            // Get Factorial
+            // -------------
+            // FactorialRecursion fact = new FactorialRecursion();
+            // System.Console.WriteLine(fact.GetFactorial(5));
 
-            Console.WriteLine("Unsorted array");
-            for(int i = 0; i < array.Length; i++)
-                Console.Write(array[i] + " ");
 
-            Console.WriteLine();
+            // ------------
+            // Get Fast Pow
+            // ------------
+
+            FastPow fastPow = new FastPow();
+            System.Console.WriteLine(fastPow.GetFastPow(2, 10));
+
+
+
+            // ===========
+            // A R R A Y S
+            // ===========
+
+            // int arraySize = 30;
+            // int[] array = new int[arraySize];
+            // Random rnd = new Random();
+
+            // for(int i = 0; i < arraySize; i++)
+            //     array[i] = rnd.Next(0, 32);
+
+            // Console.WriteLine("Unsorted array");
+            // for(int i = 0; i < array.Length; i++)
+            //     Console.Write(array[i] + " ");
+
+            // Console.WriteLine();
 
 
             // ----------
             // Radix Sort
             // ----------
-
-            RadixSort radixSort = new RadixSort();
-            radixSort.GetRadixSort(array);
+            // RadixSort radixSort = new RadixSort();
+            // radixSort.GetRadixSort(array);
 
 
             // --------
             // Bogosort
             // --------
-
             // Bogosort bogosort = new Bogosort();
             // bogosort.GetBogosort(array);
 
@@ -39,7 +61,6 @@ namespace Algorithms
             // -------------
             // Counting Sort
             // -------------
-
             // CountingSort counting = new CountingSort();
             // counting.GetCountingSort(array); 
 
@@ -47,7 +68,6 @@ namespace Algorithms
             // --------------
             // Insertion Sort
             // --------------
-            
             // InsertionSort insertion = new InsertionSort();
             // insertion.GetInsertionSearch(array);
 
@@ -55,15 +75,14 @@ namespace Algorithms
             // ----------- 
             // Choise Sort
             // -----------
-
             // ChoiseSort choise = new ChoiseSort();
             // choise.GetChoiseSort(array);
 
-            Console.WriteLine("Sorted array");
-            for(int i = 0; i < arraySize; i++)
-                Console.Write(array[i] + " ");
+            // Console.WriteLine("Sorted array");
+            // for(int i = 0; i < arraySize; i++)
+            //     Console.Write(array[i] + " ");
 
-            Console.WriteLine();
+            // Console.WriteLine();
 
 
             // -------------
