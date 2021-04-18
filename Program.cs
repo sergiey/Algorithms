@@ -10,6 +10,12 @@ namespace Algorithms
             // R E C U R S I O N
             // =================
 
+            // ------------
+            // Hanoi Towers
+            // ------------ 
+            HanoiTowers hanoi = new HanoiTowers();
+            hanoi.GetSortHanoiTowers(1, 2, 3);
+
             // -------------
             // Get Factorial
             // -------------
@@ -21,8 +27,8 @@ namespace Algorithms
             // Get Fast Pow
             // ------------
 
-            FastPow fastPow = new FastPow();
-            System.Console.WriteLine(fastPow.GetFastPow(2, 10));
+            // FastPow fastPow = new FastPow();
+            // System.Console.WriteLine(fastPow.GetFastPow(2, 10));
 
 
 

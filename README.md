@@ -9,4 +9,5 @@ Alredy studied:
 - bogosort;
 - radix sort;
 - factorial;
-- fast pow.
+- fast pow;
+- Hanoi towers.
