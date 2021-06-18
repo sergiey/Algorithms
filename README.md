@@ -10,4 +10,5 @@ Alredy studied:
 - radix sort;
 - factorial;
 - fast pow;
-- Hanoi towers.
+- Hanoi towers;
+- merge sort.

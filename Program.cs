@@ -13,8 +13,8 @@ namespace Algorithms
             // ------------
             // Hanoi Towers
             // ------------ 
-            HanoiTowers hanoi = new HanoiTowers();
-            hanoi.GetSortHanoiTowers(1, 2, 3);
+            // HanoiTowers hanoi = new HanoiTowers();
+            // hanoi.GetSortHanoiTowers(1, 2, 64);
 
             // -------------
             // Get Factorial
@@ -26,10 +26,32 @@ namespace Algorithms
             // ------------
             // Get Fast Pow
             // ------------
-
             // FastPow fastPow = new FastPow();
             // System.Console.WriteLine(fastPow.GetFastPow(2, 10));
 
+
+            // --------------
+            // Get Merge Sort
+            // --------------
+            int arraySize = 30;
+            int[] array = new int[arraySize];
+            Random rnd = new Random();
+            for(int i = 0; i < arraySize; i++)
+                array[i] = rnd.Next(0, 32);
+
+            Console.WriteLine("Unsorted array");
+            for(int i = 0; i < array.Length; i++)
+                Console.Write(array[i] + " ");
+            Console.WriteLine();
+
+            MergeSort mergeSort = new MergeSort();
+            int[] mergedArray = mergeSort.GetMergeSort(array);
+
+            Console.WriteLine("Sorted array");
+            for(int i = 0; i < mergedArray.Length; i++)
+                Console.Write(mergedArray[i] + " ");
+
+            Console.WriteLine();
 
 
             // ===========
