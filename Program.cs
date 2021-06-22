@@ -33,6 +33,29 @@ namespace Algorithms
             // --------------
             // Get Merge Sort
             // --------------
+            // int arraySize = 30;
+            // int[] array = new int[arraySize];
+            // Random rnd = new Random();
+            // for(int i = 0; i < arraySize; i++)
+            //     array[i] = rnd.Next(0, 32);
+
+            // Console.WriteLine("Unsorted array");
+            // for(int i = 0; i < array.Length; i++)
+            //     Console.Write(array[i] + " ");
+            // Console.WriteLine();
+
+            // MergeSort mergeSort = new MergeSort();
+            // int[] mergedArray = mergeSort.GetMergeSort(array);
+
+            // Console.WriteLine("Sorted array");
+            // for(int i = 0; i < mergedArray.Length; i++)
+            //     Console.Write(mergedArray[i] + " ");
+
+            // Console.WriteLine();
+            
+            // --------------
+            // Get Quick Sort
+            // --------------
             int arraySize = 30;
             int[] array = new int[arraySize];
             Random rnd = new Random();
@@ -44,15 +67,14 @@ namespace Algorithms
                 Console.Write(array[i] + " ");
             Console.WriteLine();
 
-            MergeSort mergeSort = new MergeSort();
-            int[] mergedArray = mergeSort.GetMergeSort(array);
+            Quicksort quickSort = new Quicksort();
+            int[] sortedArray = quickSort.GetQuickSort(array);
 
             Console.WriteLine("Sorted array");
-            for(int i = 0; i < mergedArray.Length; i++)
-                Console.Write(mergedArray[i] + " ");
+            for(int i = 0; i < sortedArray.Length; i++)
+                Console.Write(sortedArray[i] + " ");
 
             Console.WriteLine();
-
 
             // ===========
             // A R R A Y S

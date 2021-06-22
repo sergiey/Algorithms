@@ -11,4 +11,5 @@ Alredy studied:
 - factorial;
 - fast pow;
 - Hanoi towers;
-- merge sort.
+- merge sort;
+- quick sort.
